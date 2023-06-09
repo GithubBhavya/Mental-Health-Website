@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>ADULTING</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Blogs.html">BLOG</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1>A+ Mentality</h1>
+    </section>
+    <!-------Blog------->
+    <section class="social">
+        <div class="row">
+            <div class="blog-left">
+                <img src="A+blog.png">
+                <h2>A+ Mentality</h2>
+                <p>
+                    An A+ student is a dreamy title to get. Who doesnt want to be among the best students in class, never going crazy by
+                    the end of the school or college year, fighting your way out of the final exams so to avoid summer classes?
+                    Plus, as you know, higher grades will increase your chances to get into the best universities, which could lead to
+                    a more successful career in the future. So here are ten rules that you should follow if you want to become an A+
+                    student. You will see that it is much easier to make it happen than you think.
+                </p>
+                <br>
+                <p>
+                    The first rule that you should follow so to become an A+ student is to make the most of your classes. No matter how
+                    much boring you find them, there is a reason why they exist, and it that they give you the opportunity to get to
+                    know about the topic, ask questions and interact with your teacher and classmates. So make the most of it.Doing homework
+                    can be an annoyance, but it is the best resource you got to stay on top of your study. It will give you the opportunity
+                    to fix in your mind and revise what you have learned at school or college, and check if you have any doubts. So, even
+                    if you have some time in your hands, always try to get your homework done on the same day they are assigned.
+                </p>
+                <br>
+                <p>
+                    Taking notes is an art, but one that you have to learn by yourself. There are many techniques on how to take notes,
+                    but the fact is that each person is different about it. Maybe what looks like a complete mess to someone else is a
+                    perfect and efficient method for you, and this is all that matter. But you should spend some time mastering how to
+                    take notes in class and during your research, plus how to index them, so you can find them when necessary.
+                </p>
+                <br>
+                <p>
+                    The place where you study is your sanctuary. Again, this is a particular choice. But you need to have a designed area
+                    to study. It will help you to turn on the required mindset. It can be your room, the library, the kitchen table.
+                    Just make sure that you have everything you need nearby, so you dont have any excuses to be wandering around the
+                    place.A study plan with a calendar can be your best friend on your journey to becoming an A+ student. At the beginning
+                    of each semester, you should get your syllabus, your school calendar, plus any other resources given by your school and
+                    create your own schedule. It needs to compile all-important deadlines, such as your assignments and exams, so you will
+                    not get caught by surprise. Has your semester already started? No problem, you still can get it done for whatever
+                    weeks you are still going to attend classes.
+                </p>
+
+
+
+                <div class="comment-box">
+                    <h3>Leave A comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name"name="fname" required><b><span class="formerror"> </span></b>
+                        <input type="email" placeholder="Enter Email"name="femail" required><b><span class="formerror"> </span></b>
+                        <textarea rows="5" placeholder="Your Comment"required>
+                         </textarea>
+                        <button type="submit">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right"></div>
+        </div>
+    </section>
+    <script>
+        function clearErrors() {
+
+            errors = document.getElementsByClassName('formerror');
+            for (let item of errors) {
+                item.innerHTML = "";
+            }
+
+
+        }
+        function seterror(id, error) {
+            //sets error inside tag of id
+            element = document.getElementById(id);
+            element.getElementsByClassName('formerror')[0].innerHTML = error;
+            function validateForm() {
+                var returnval = true;
+                clearErrors();
+
+                //perform validation and if validation fails, set the value of returnval to false
+                var name = document.forms['myForm']["fname"].value;
+                if (name.length < 5) {
+                    seterror("name", "*Length of name is too short");
+                    returnval = false;
+                }
+                var email = document.forms['myForm']["femail"].value;
+                if (email.length > 15) {
+                    seterror("email", "*Email length is too long");
+                    returnval = false;
+                }
+
+    </script>
+
+
+
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>
+            First ever website where you can get solutions to all your problems<br>Get to know more about us
+            through our social media pages.
+        </p>
+    </section>
+
+</body>
+</html>

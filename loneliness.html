@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>ADULTING</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Blogs.html">BLOG</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1>Loneliness</h1>
+    </section>
+    <!-------Blog------->
+    <section class="social">
+        <div class="row">
+            <div class="blog-left">
+                <img src="lonely.jpg">
+                <h2>Loneliness</h2>
+                <p>
+                    Loneliness is a universal human emotion that is both complex and unique to each individual. Because it has no single
+                    common cause, the prevention and treatment of this potentially damaging state of mind can vary dramatically.For
+                    example, a lonely child who struggles to make friends at school has different needs than a lonely older adult
+                    whose spouse has recently died.This article discusses what we mean by the term "lonely," as well as the various
+                    causes, health consequences, symptoms, and potential treatments for loneliness.
+                </p>
+                <br>
+                <p>
+                    While common definitions of loneliness describe it as a state of solitude or being alone, loneliness is actually a
+                    state of mind. Loneliness causes people to feel empty, alone, and unwanted. People who are lonely often crave human
+                    contact, but their state of mind makes it more difficult to form connections with other people. Researchers suggest
+                    that loneliness is associated with social isolation, poor social skills, introversion, and depression.
+                </p>
+                <br>
+                <p>
+                    Why we travel may differ from one person to another, but people traveling always develop empathy and a deeper
+                    understanding of other cultures. Being more understanding and tolerant about a culture different than ours is part
+                    of being smarter, but I consider it as a benefits of traveling in itself.
+                </p>
+                <br>
+                <p>
+                    Loneliness, according to many experts, is not necessarily about being alone. Instead, if you feel alone and isolated,
+                    then that is how loneliness plays into your state of mind. For example, a college freshman might feel lonely despite
+                    being surrounded by roommates and other peers. A soldier beginning their military career might feel lonely after
+                    being deployed to a foreign country, despite being constantly surrounded by other troop members.Additionally, it can be
+                    a symptom of a psychological disorder such as depression. Depression often causes people to withdrawal socially, which
+                    can lead to isolation. Research also suggests that loneliness can be a factor that contributes to symptoms of
+                    depression
+                </p>
+
+
+
+                <div class="comment-box">
+                    <h3>Leave A comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name"name="fname" required><b><span class="formerror"> </span></b>
+                        <input type="email" placeholder="Enter Email"name="femail" required><b><span class="formerror"> </span></b>
+                        <textarea rows="5" placeholder="Your Comment"required>
+                         </textarea>
+                        <button type="submit">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right"></div>
+        </div>
+    </section>
+    <script>
+        function clearErrors() {
+
+            errors = document.getElementsByClassName('formerror');
+            for (let item of errors) {
+                item.innerHTML = "";
+            }
+
+
+        }
+        function seterror(id, error) {
+            //sets error inside tag of id
+            element = document.getElementById(id);
+            element.getElementsByClassName('formerror')[0].innerHTML = error;
+            function validateForm() {
+                var returnval = true;
+                clearErrors();
+
+                //perform validation and if validation fails, set the value of returnval to false
+                var name = document.forms['myForm']["fname"].value;
+                if (name.length < 5) {
+                    seterror("name", "*Length of name is too short");
+                    returnval = false;
+                }
+                var email = document.forms['myForm']["femail"].value;
+                if (email.length > 15) {
+                    seterror("email", "*Email length is too long");
+                    returnval = false;
+                }
+
+    </script>
+
+
+
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>
+            First ever website where you can get solutions to all your problems<br>Get to know more about us
+            through our social media pages.
+        </p>
+    </section>
+
+</body>
+</html>

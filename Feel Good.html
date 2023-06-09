@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>ADULTING</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Blogs.html">BLOG</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1>Feel Good</h1>
+    </section>
+    <!-------Blog------->
+    <section class="social">
+        <div class="row">
+            <div class="blog-left">
+                <img src="feel good.jpg">
+                <h2>How to Feel Good about Yourself?</h2>
+                <p>
+                    Some days are better than others. On those days that go less well, we usually end up being hard on ourselves.
+                    Here are some tools to avoid doing so.Keep going. Don't let life's changes throw you off track, but remember that
+                    most extenuating circumstances are temporary. Gain more clarity by staying the course and channeling your energy
+                    in a positive direction.
+                </p>
+                <br>
+                <p>
+                    Trust yourself. Believe in your inner resources, no matter what, and you'll grow from the experience. I believe that
+                    the answers usually lie within and you are probably smart enough to figure out what you need to do. Give yourself a
+                    little time and have patience. Be friends with life. Remember that the world is not out to get you and it does not
+                    punish you. You do that to yourself. Learning to focus on other opportunities or in another direction can give
+                    you some perspective.Watch your thoughts. Your thinking will never be 100 percent positive. You must learn to
+                    dismiss the negative thoughts and stay open to other ideas that will help you move in a positive direction.
+                    Start recognizing negative thoughts and use your mind to quell them..
+                </p>
+                <br>
+                <p>
+                    Summon the strength you have inside. Learn to access and direct your strengths to the highest good for all concerned.
+                    Believe that your strength and intelligence can help you deal with anything. Remember that you have survived worse.
+                </p>
+                <br>
+                <p>
+                    Learn to love yourself. You do not have to be who you are today, and your life is not scripted. Changing how you feel about
+                    yourself means creating a strategy, gathering some new tools, and making yourself into the person you want to be. A
+                    good way to start is to stop doing things that hurt. Don't want too much. Desire can be a powerful motivating tool,
+                    but wanting something too much can be very painful and very expensive, so don't live beyond your means or covet the
+                    unattainable. Seek your desire, but keep your integrity.
+                </p>
+
+
+
+                <div class="comment-box">
+                    <h3>Leave A comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name"name="fname" required><b><span class="formerror"> </span></b>
+                        <input type="email" placeholder="Enter Email"name="femail" required><b><span class="formerror"> </span></b>
+                        <textarea rows="5" placeholder="Your Comment"required>
+                         </textarea>
+                        <button type="submit">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right"></div>
+        </div>
+    </section>
+    <script>
+        function clearErrors() {
+
+            errors = document.getElementsByClassName('formerror');
+            for (let item of errors) {
+                item.innerHTML = "";
+            }
+
+
+        }
+        function seterror(id, error) {
+            //sets error inside tag of id
+            element = document.getElementById(id);
+            element.getElementsByClassName('formerror')[0].innerHTML = error;
+            function validateForm() {
+                var returnval = true;
+                clearErrors();
+
+                //perform validation and if validation fails, set the value of returnval to false
+                var name = document.forms['myForm']["fname"].value;
+                if (name.length < 5) {
+                    seterror("name", "*Length of name is too short");
+                    returnval = false;
+                }
+                var email = document.forms['myForm']["femail"].value;
+                if (email.length > 15) {
+                    seterror("email", "*Email length is too long");
+                    returnval = false;
+                }
+
+    </script>
+
+
+
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>
+            First ever website where you can get solutions to all your problems<br>Get to know more about us
+            through our social media pages.
+        </p>
+    </section>
+
+</body>
+</html>

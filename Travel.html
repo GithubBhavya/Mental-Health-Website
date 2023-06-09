@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>ADULTING</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Blogs.html">BLOG</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1>Travel</h1>
+    </section>
+    <!-------Blog------->
+    <section class="social">
+        <div class="row">
+            <div class="blog-left">
+                <img src="travel1.jpg">
+                <h2>Travel</h2>
+                <p>
+                    The benefits of traveling are not just a one-time thing: traveling changes you physically and psychologically.
+                    Having little time or money isn't a valid excuse. You can fly for cheap very easily. If you have a full-time
+                    job and a family, you can still travel on the weekends or holidays, even with a baby.2020 has been a tough year
+                    for travel - to say the least. But don't let that discourage you from making travel plans in 2021!Here are some
+                    of the main benefits of traveling, in case you need convincing. And I'm sure that once you get started, you'll
+                    find some more yourself!
+                </p>
+                <br>
+                <p>
+                    From cutting down on stress, to lowering your chances of developing a heart disease, the health benefits of Traveling
+                    are huge.You may stay sitting on a chair all day long at the workplace: including some walking to your trip is
+                    sure to make your body feel better. For some people, wandering abroad is even a cure for depression and anxiety.
+                    Of course, it's not a foolproof cure, but it might help you feel better, both physically and psychologically.
+                    Traveling more is likely to have a tremendous impact on your mental well-being, especially if you're no used to
+                    going out of your comfort zone.Trust me: travel more and your doctor will be happy. Be sure to get in touch with
+                    your physician, they might recommend some medication to accompany you in your travels, especially if you're heading
+                    to regions of the globe with potentially dangerous diseases.
+                </p>
+                <br>
+                <p>
+                    Why we travel may differ from one person to another, but people traveling always develop empathy and a deeper
+                    understanding of other cultures. Being more understanding and tolerant about a culture different than ours is part
+                    of being smarter, but I consider it as a benefits of traveling in itself.
+                </p>
+                <br>
+                <p>
+                    Physiological effects, similar to those in other anxiety disorders, are present in social phobias.In adults,
+                    it may cause tears as well as excessive sweating, nausea, difficulty breathing, shaking, and palpitations as
+                    a result of the fight-or-flight response. The walk disturbance (where a person is so worried about how they
+                    walk that they may lose balance) may appear, especially when passing a group of people. Blushing is commonly
+                    exhibited by individuals suffering from social phobia.[12] These visible symptoms further reinforce the
+                    anxiety in the presence of others. A 2006 study found that the area of the brain called the amygdala, part
+                    of the limbic system, is hyperactive when patients are shown threatening faces or confronted with frightening
+                    situations. They found that patients with more severe social phobia showed a correlation with increased
+                    response in their amygdalae.[18] People with SAD may avoid looking at other people, and even their surroundings,
+                    to a greater extent than their peers, possibly to decrease the risk of eye contact, which can be interpreted as
+                    a nonverbal signal of openness to social interaction
+                </p>
+
+
+
+                <div class="comment-box">
+                    <h3>Leave A comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name"name="fname" required><b><span class="formerror"> </span></b>
+                        <input type="email" placeholder="Enter Email"name="femail" required><b><span class="formerror"> </span></b>
+                        <h5>Click Here to add your comment</h5>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdALoVDn7xh6DVbSaSRC0_BVc2lZdXGV9USzSUYjcKWX57npA/viewform"> Add Comment </a></textarea>
+                        <br >
+                        <button type="submit">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right"></div>
+        </div>
+    </section>
+    <script>
+        function clearErrors() {
+
+            errors = document.getElementsByClassName('formerror');
+            for (let item of errors) {
+                item.innerHTML = "";
+            }
+
+
+        }
+        function seterror(id, error) {
+            //sets error inside tag of id
+            element = document.getElementById(id);
+            element.getElementsByClassName('formerror')[0].innerHTML = error;
+            function validateForm() {
+                var returnval = true;
+                clearErrors();
+
+                //perform validation and if validation fails, set the value of returnval to false
+                var name = document.forms['myForm']["fname"].value;
+                if (name.length < 5) {
+                    seterror("name", "*Length of name is too short");
+                    returnval = false;
+                }
+                var email = document.forms['myForm']["femail"].value;
+                if (email.length > 15) {
+                    seterror("email", "*Email length is too long");
+                    returnval = false;
+                }
+
+    </script>
+
+
+
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>
+            First ever website where you can get solutions to all your problems<br>Get to know more about us
+            through our social media pages.
+        </p>
+    </section>
+
+</body>
+</html>

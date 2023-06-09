@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>ADULTING</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Blogs.html">BLOG</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1>Social Anxiety</h1>
+    </section>
+    <!-------Blog------->
+    <section class="social">
+        <div class="row">
+            <div class="blog-left">
+                <img src="social1.jpg">
+                <h2>Social Anxiety</h2>
+                <p>
+                    Social anxiety disorder, sometimes referred to as social phobia, is a type of anxiety disorder that
+                    causes extreme fear in social settings. People with this disorder have trouble talking to people,
+                    meeting new people, and attending social gatherings. They fear being judged or scrutinized by others
+                </p>
+                <br>
+                <p>
+                    Intense fear of interacting or talking with strangers. Fear that others will notice that you look anxious.
+                    Fear of physical symptoms that may cause you embarrassment, such as blushing, sweating, trembling or
+                    having a shaky voice. Avoidance of doing things or speaking to people out of fear of embarrassment.
+                </p>
+                <br>
+                <p>
+                    Physical symptoms often include excessive blushing, excess sweating, trembling, palpitations, and nausea.
+                    Stammering may be present, along with rapid speech. Panic attacks can also occur under intense fear and discomfort.
+                    Some sufferers may use alcohol or other drugs to reduce fears and inhibitions at social events. It is common
+                    for sufferers of social phobia to self-medicate in this fashion, especially if they are undiagnosed, untreated,
+                    or both; this can lead to alcohol use disorder, eating disorders or other kinds of substance use disorders.                    SAD is sometimes referred to as an illness of lost opportunities where "individuals make major life choices
+                    to accommodate their illness". According to ICD-10 guidelines, the main diagnostic criteria of social
+                    phobia are fear of being the focus of attention, or fear of behaving in a way that will be embarrassing or
+                    humiliating, avoidance and anxiety symptoms.[5] Standardized rating scales can be used to screen for social
+                    anxiety disorder and measure the severity of anxiety.
+                </p>
+                <br>
+                <p>
+                    Physiological effects, similar to those in other anxiety disorders, are present in social phobias.In adults,
+                    it may cause tears as well as excessive sweating, nausea, difficulty breathing, shaking, and palpitations as
+                    a result of the fight-or-flight response. The walk disturbance (where a person is so worried about how they
+                    walk that they may lose balance) may appear, especially when passing a group of people. Blushing is commonly
+                    exhibited by individuals suffering from social phobia.[12] These visible symptoms further reinforce the
+                    anxiety in the presence of others. A 2006 study found that the area of the brain called the amygdala, part
+                    of the limbic system, is hyperactive when patients are shown threatening faces or confronted with frightening
+                    situations. They found that patients with more severe social phobia showed a correlation with increased
+                    response in their amygdalae.[18] People with SAD may avoid looking at other people, and even their surroundings,
+                    to a greater extent than their peers, possibly to decrease the risk of eye contact, which can be interpreted as
+                    a nonverbal signal of openness to social interaction
+                </p>
+
+
+
+                <div class="comment-box">
+                    <h3>Leave A comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name"name="fname" required><b><span class="formerror"> </span></b>
+                        <input type="email" placeholder="Enter Email"name="femail" required><b><span class="formerror"> </span></b>
+                        <textarea rows="5" placeholder="Your Comment"required>
+                         </textarea>
+                        <button type="submit">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right"></div>
+        </div>
+    </section>
+    <script>
+        function clearErrors() {
+
+            errors = document.getElementsByClassName('formerror');
+            for (let item of errors) {
+                item.innerHTML = "";
+            }
+
+
+        }
+        function seterror(id, error) {
+            //sets error inside tag of id
+            element = document.getElementById(id);
+            element.getElementsByClassName('formerror')[0].innerHTML = error;
+            function validateForm() {
+                var returnval = true;
+                clearErrors();
+
+                //perform validation and if validation fails, set the value of returnval to false
+                var name = document.forms['myForm']["fname"].value;
+                if (name.length < 5) {
+                    seterror("name", "*Length of name is too short");
+                    returnval = false;
+                }
+                var email = document.forms['myForm']["femail"].value;
+                if (email.length > 15) {
+                    seterror("email", "*Email length is too long");
+                    returnval = false;
+                }
+
+    </script>
+
+
+
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>
+            First ever website where you can get solutions to all your problems<br>Get to know more about us
+            through our social media pages.
+        </p>
+    </section>
+
+</body>
+</html>

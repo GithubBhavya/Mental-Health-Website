@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>ADULTING</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Blogs.html">BLOG</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1>Procrastination</h1>
+    </section>
+    <!-------Blog------->
+    <section class="social">
+        <div class="row">
+            <div class="blog-left">
+                <img src="pro.jpg">
+                <h2>Procrastination</h2>
+                <p>
+                    Procrastination is a challenge we have all faced at one point or another. For as long as humans have been around,
+                    we have been struggling with delaying, avoiding, and procrastinating on issues that matter to us. During our more
+                    productive moments, when we temporarily figure out how to stop procrastinating, we feel satisfied and accomplished.
+                    Today, we're going to talk about how to make those rare moments of productivity more routine. The purpose of this
+                    guide is to break down the science behind why we procrastinate, share proven frameworks you can use to beat
+                    procrastination, and cover useful strategies that will make it easier to take action.
+                </p>
+                <br>
+                <p>
+                    The best way to understand this is by imagining that you have two selves: your Present Self and your Future Self.
+                    When you set goals for yourself — like losing weight or writing a book or learning a language — you are actually
+                    making plans for your Future Self. You are envisioning what you want your life to be like in the future
+                    Researchers have found that when you think about your Future Self, it is quite easy for your brain to see the
+                    value in taking actions with long-term benefits. The Future Self values long-term rewards. However, while the
+                    Future Self can set goals, only the Present Self can take action. When the time comes to make a decision, you
+                    are no longer making a choice for your Future Self. Now you are in the present moment, and your brain is thinking
+                    about the Present Self. Researchers have discovered that the Present Self really likes instant gratification,
+                    not long-term payoff. So, the Present Self and the Future Self are often at odds with one another. The Future
+                    Self wants to be trim and fit, but the Present Self wants a donut. Sure, everyone knows you should eat healthy
+                    today to avoid being overweight in 10 years. But consequences like an increased risk for diabetes or heart
+                    failure are years away.
+                </p>
+                <br>
+                <p>
+                    Physical symptoms often include excessive blushing, excess sweating, trembling, palpitations, and nausea.
+                    Stammering may be present, along with rapid speech. Panic attacks can also occur under intense fear and discomfort.
+                    Some sufferers may use alcohol or other drugs to reduce fears and inhibitions at social events. It is common
+                    for sufferers of social phobia to self-medicate in this fashion, especially if they are undiagnosed, untreated,
+                    or both; this can lead to alcohol use disorder, eating disorders or other kinds of substance use disorders.                    SAD is sometimes referred to as an illness of lost opportunities where "individuals make major life choices
+                    to accommodate their illness".
+                </p>
+                <br>
+                <p>
+                    According to ICD-10 guidelines, the main diagnostic criteria of social phobia are fear of being the focus of
+                    attention, or fear of behaving in a way that will be embarrassing or humiliating, avoidance and anxiety symptoms.
+                    Standardized rating scales can be used to screen for social anxiety disorder and measure the severity of anxiety.
+                    You cannot rely on long-term consequences and rewards to motivate the Present Self. Instead, you have to find a way
+                    to move future rewards and punishments into the present moment. You have to make the future consequences become present
+                    consequences.This is exactly what happens during the moment when we finally move beyond procrastination and take action.
+                    For example, let's say you have a report to write. You've known about it for weeks and continued to put it off day after
+                    day. You experience a little bit of nagging pain and anxiety thinking about this paper you have to write, but not enough
+                    to do anything about it.
+                </p>
+
+
+
+                <div class="comment-box">
+                    <h3>Leave A comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name"name="fname" required><b><span class="formerror"> </span></b>
+                        <input type="email" placeholder="Enter Email"name="femail" required><b><span class="formerror"> </span></b>
+                        <textarea rows="5" placeholder="Your Comment"required>
+                         </textarea>
+                        <button type="submit">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right"></div>
+        </div>
+    </section>
+    <script>
+        function clearErrors() {
+
+            errors = document.getElementsByClassName('formerror');
+            for (let item of errors) {
+                item.innerHTML = "";
+            }
+
+
+        }
+        function seterror(id, error) {
+            //sets error inside tag of id
+            element = document.getElementById(id);
+            element.getElementsByClassName('formerror')[0].innerHTML = error;
+            function validateForm() {
+                var returnval = true;
+                clearErrors();
+
+                //perform validation and if validation fails, set the value of returnval to false
+                var name = document.forms['myForm']["fname"].value;
+                if (name.length < 5) {
+                    seterror("name", "*Length of name is too short");
+                    returnval = false;
+                }
+                var email = document.forms['myForm']["femail"].value;
+                if (email.length > 15) {
+                    seterror("email", "*Email length is too long");
+                    returnval = false;
+                }
+
+    </script>
+
+
+
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>
+            First ever website where you can get solutions to all your problems<br>Get to know more about us
+            through our social media pages.
+        </p>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>ADULTING</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Blogs.html">BLOG</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1>Love Yourself</h1>
+    </section>
+    <!-------Blog------->
+    <section class="social">
+        <div class="row">
+            <div class="blog-left">
+                <img src="love2.jpg">
+                <h2>Love Yourself</h2>
+                <p>
+                    Why is it so difficult to love ourselves? Basically, the short answer to this question is that we were raised
+                    in a society that didn’t teach us about self-love. This may not seem very important to some, but self-love
+                    is one of the best things you can do for yourself. Loving yourself provides you with self-confidence, self-worth,
+                    and in general, you feel more positive. If you can learn to love yourself, you will feel happier and will learn
+                    to take better care of yourself. Looking in the mirror, most of us see a lot of different flaws and remember
+                    too many past experiences and failings to love ourselves. The less you love yourself, listen to yourself, and
+                    understand yourself, the more confused, upset, and frustrated you will be in life. When you begin to love
+                    yourself and continue to love yourself more and more each day, things slowly will be a little bit better in
+                    every way possible.Unfortunately, self-love isn’t always easy.
+                </p>
+                <br>
+                <p>
+                    Accepting the pain and allowing yourself to be honest with who you are is a big step to loving yourself. Forgive yourself for past actions and things you are ashamed
+                    of doing.Carrying a lot of negative emotions like jealousy, disgust, and rage can have a negative impact. We need
+                    to learn how to accept not only the emotions that create love, joy, and happiness but also the ones that cause fear,
+                    insecurity, and anger in our lives.
+                </p>
+                <br>
+                <p>
+                    While we need to learn how to acknowledge and accept the pain with the love, another step is reconciling with a
+                    cold and unopened heart. Asking yourself if you fully love yourself can be very difficult because you must accept
+                    your flaws and faults.Love is something we choose, the same way we choose anger, hate, or sadness. We have the
+                    power to forgive someone who has hurt us in the past. We can learn to finally heal from something when we can
+                    forgive. We can always choose love.Learning to love yourself leads to better self-care. Examples of this could be
+                    taking a break from time to time and accepting that no one is perfect and things happen.
+                </p>
+                <br>
+                <p>
+                    Needless to say, it does not mean being arrogant, conceited or thinking that you are better than anyone else.
+                    It means having a healthy regard for yourself knowing that you are a worthy human being.It is important to remind
+                    ourselves that no one is perfect. We all have strengths and weaknesses and we certainly possess the resources to work
+                    on improving ourselves.In order to appreciate yourself it is up to you to discover what makes you unique and to further
+                    develop those talents. We have a responsibility to ourselves to do so. You cannot sit around and wait for approval
+                    from others. Work on accepting yourself. You are the only "you" that you have. It is in your best interests to be
+                    the best you can be. Until you love yourself, you will not be able to love anyone else. You can only love another to
+                    the degree that you do yourself.
+                </p>
+
+
+
+
+
+                <div class="comment-box">
+                    <h3>Leave A comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name" name="fname" required><b><span class="formerror"> </span></b>
+                        <input type="email" placeholder="Enter Email" name="femail" required><b><span class="formerror"> </span></b>
+                        <textarea rows="5" placeholder="Your Comment"required>
+                         </textarea>
+                        <button type="submit">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right"></div>
+        </div>
+    </section>
+    <script>
+        function clearErrors() {
+
+            errors = document.getElementsByClassName('formerror');
+            for (let item of errors) {
+                item.innerHTML = "";
+            }
+
+
+        }
+        function seterror(id, error) {
+            //sets error inside tag of id
+            element = document.getElementById(id);
+            element.getElementsByClassName('formerror')[0].innerHTML = error;
+            function validateForm() {
+                var returnval = true;
+                clearErrors();
+
+                //perform validation and if validation fails, set the value of returnval to false
+                var name = document.forms['myForm']["fname"].value;
+                if (name.length < 5) {
+                    seterror("name", "*Length of name is too short");
+                    returnval = false;
+                }
+                var email = document.forms['myForm']["femail"].value;
+                if (email.length > 15) {
+                    seterror("email", "*Email length is too long");
+                    returnval = false;
+                }
+
+    </script>
+
+
+
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>
+            First ever website where you can get solutions to all your problems<br>Get to know more about us
+            through our social media pages.
+        </p>
+    </section>
+
+</body>
+</html>
